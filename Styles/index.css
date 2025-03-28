@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif; 
+}
+
+
+body {
+  background-image: url('/src/assets/fundo.png');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center;
+  min-height: 100vh; 
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center;
+}
+
+
+header {
+  position: absolute; 
+  top: 20px; 
+  right: 20px; 
+  display: flex;
+  flex-direction: row; 
+  gap: 10px; 
+}
+
+.botao button {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.botao button a {
+  color: white;
+  text-decoration: none; 
+  font-size: 18px;
+  display: block;
+}
+
+.botao button:hover {
+  background-color: rgba(0, 0, 0, 0.8); 
+}
+
+
+.inicio {
+  text-align: center;
+  padding: 20px;
+}
+
+.inicio img {
+  max-width: 100%;
+  height: auto; 
+  margin-bottom: 0;
+  margin-top: -30px; 
+}
+
+.inicio p {
+  font-size: 24px; 
+  line-height: 1.5;
+  max-width: 600px;
+  margin-top: -20px; 
+}
