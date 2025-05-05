@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #360b5c;
+    min-height: 100vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: black;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 70px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+header img:hover {
+    transform: scale(1.2);
+}
+
+
+.container-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; 
+    padding: 40px 20px;
+    margin: auto; 
+    flex-wrap: wrap;
+    min-height: calc(100vh - 150px); 
+}
+
+
+.img1, .img2, .img3 {
+    width: 30%;
+    max-width: 400px;
+    min-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 20px 0; 
+}
+
+
+.container-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.container-img img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width: 1200px) {
+    .container-img {
+        gap: 20px;
+    }
+    
+    .img1, .img2, .img3 {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-img {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .img1, .img2, .img3 {
+        width: 45%;
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+        height: 60px;
+    }
+    
+    header div {
+        gap: 20px;
+    }
+    
+    header img {
+        height: 40px;
+    }
+    
+    .container-img {
+        padding: 30px 15px;
+        gap: 15px;
+    }
+    
+    .img1, .img2, .img3 {
+        width: 100%;
+        max-width: 350px;
+        min-width: auto;
+    }
+}
