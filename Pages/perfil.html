@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarHub</title>
+    <link rel="shortcut icon" href="/src/assets/icon.png">
+    <link rel="stylesheet" href="/Styles/perfil.css">
+</head>
+
+<body>
+    <div class="container">
+    <form id="profile-form">
+        <div class="preview">
+            <div class="image-upload">
+                <img id="preview-image" src="" alt="previa">
+                <input type="file" id="profile-pic" accept="image/*">
+                <div class="overlay">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="username">Nome:</label><br>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Contato:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu Celular" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+        </div>
+        <div class="form-group">
+            <label for="about">Bios:</label><br>
+            <textarea id="about" name="about" placeholder="Escreva algo sobre você" required></textarea>
+        </div>
+
+        <button type="submit">Salvar</button>
+
+    </form>
+
+    <div class="logout">
+        <button class="out" type="button">Sair</button>
+    </div>
+    </div>
+    <script src="/Pages/perfil.js"></script>
+</body>
+
+</html>
